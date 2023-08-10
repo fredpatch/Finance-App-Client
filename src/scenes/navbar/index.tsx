@@ -18,7 +18,7 @@ const Navbar = () => {
       </FlexBetween>
       {/* RIGHT SIDE */}
       <FlexBetween gap="2rem">
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { color: "#d0fcf4" } }}>
           <Link
             to={"/"}
             onClick={() => setSelected("dashboard")}
@@ -30,7 +30,7 @@ const Navbar = () => {
             dashboard
           </Link>
         </Box>
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { color: "#d0fcf4" } }}>
           <Link
             to={"/encours"}
             onClick={() => setSelected("encours")}
@@ -42,7 +42,7 @@ const Navbar = () => {
             encours
           </Link>
         </Box>
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { color: "#d0fcf4" } }}>
           <Link
             to={"/predictions"}
             onClick={() => setSelected("predictions")}

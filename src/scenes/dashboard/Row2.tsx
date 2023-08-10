@@ -27,7 +27,7 @@ const pieData = [
 
 const Row2 = () => {
   const { palette } = useTheme();
-  const pieColors = [palette.primary[800], palette.primary[300]];
+  const pieColors = ["#076050", "#41f2d3"];
 
   const { data: operationalData } = useGetKpisQuery();
   const { data: productData } = useGetProductsQuery();
@@ -68,7 +68,7 @@ const Row2 = () => {
       <DashboardBox gridArea={"d"}>
         <BoxHeader
           sidetext={"+4%"}
-          title={"Operational vs Non-Operational Expesenses"}
+          title={"Operational vs Non-Operational Expenses"}
           subtitle={""}
         />
         <ResponsiveContainer width={"100%"} height={"100%"}>
@@ -109,7 +109,7 @@ const Row2 = () => {
               yAxisId="left"
               type="monotone"
               dataKey="Non Operational Expenses"
-              stroke={palette.tertiary[500]}
+              stroke={"#8884d8"}
               activeDot={{ r: 7 }}
             />
             <Line
@@ -153,12 +153,10 @@ const Row2 = () => {
           </PieChart>
           <Box ml={"-0.7rem"} flexBasis={"40%"} textAlign={"center"}>
             <Typography variant="h5">Target Sales</Typography>
-            <Typography variant="h3" m={"0.3rem"} color={palette.primary[300]}>
+            <Typography variant="h3" m={"0.3rem"} color={"#71f5de"}>
               83
             </Typography>
-            <Typography variant="h6">
-              Finance goals campaign desired
-            </Typography>
+            <Typography variant="h6">Finance goals campaign desired</Typography>
           </Box>
           <Box flexBasis={"40%"}>
             <Typography variant="h5">Losses in Revenues</Typography>
@@ -217,7 +215,7 @@ const Row2 = () => {
             <Scatter
               name="Product Expense Ratio"
               data={productExpenseData}
-              fill={palette.tertiary[500]}
+              fill={"#8884d8"}
             />
           </ScatterChart>
         </ResponsiveContainer>
