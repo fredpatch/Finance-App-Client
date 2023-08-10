@@ -21,7 +21,7 @@ export const api = createApi({
     // Define an endpoint named "getKpis"
     getKpis: build.query<Array<GetKpisResponse>, void>({
       // Define the query function for this endpoint
-      query: () => "kpi/kpis/",
+      query: () => "https://dashboard-finance.onrender.com/kpi/kpis/",
 
       // Define tags for invalidating cached data
       providesTags: ["Kpis"],
@@ -30,7 +30,7 @@ export const api = createApi({
     // Define an endpoint named "getProducts"
     getProducts: build.query<Array<GetProductsResponse>, void>({
       // Define the query function for this endpoint
-      query: () => "product/products/",
+      query: () => "https://dashboard-finance.onrender.com/product/products/",
 
       // Define tags for invalidating cached data
       providesTags: ["Products"],
@@ -38,7 +38,8 @@ export const api = createApi({
     // Define an endpoint named "getProducts"
     getTransactions: build.query<Array<GetTransactionsResponse>, void>({
       // Define the query function for this endpoint
-      query: () => "transaction/transactions/",
+      query: () =>
+        "https://dashboard-finance.onrender.com/transaction/transactions/",
 
       // Define tags for invalidating cached data
       providesTags: ["Transactions"],
